@@ -1,0 +1,28 @@
+.canvas {
+    position: absolute;
+    width: 100vw;
+    inset: 0;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 3s;
+    transition-timing-function: cubic-bezier(0.43, 0.13, 0.23, 0.96);
+
+    &[data-visible='true'] {
+        opacity: 1;
+    }
+}
+
+.canvasContact {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 3s;
+    transition-timing-function: cubic-bezier(0.43, 0.13, 0.23, 0.96);
+    z-index: -1;
+
+    &[data-visible='true'] {
+        opacity: 0.5;
+    }
+}
