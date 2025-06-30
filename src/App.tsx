@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import WorkInProgress from "@/pages/WorkInProgress";
+import WorkInProgress from "./pages/WorkInProgress";
 
 const App = () => (
   <BrowserRouter>
